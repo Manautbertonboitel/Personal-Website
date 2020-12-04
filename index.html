@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Manaut Berton-Boitel</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <div class="content" id="content">
+        <img src="img/photo.png" alt="Manaut Berton-Boitel" class="photo pic">
+        <div id="scene">
+          <div data-depth="1">
+            <h1>Manaut Berton-Boitel</h1>
+            <h2>étudiant multimédia & internet</h2>
+            <ul class="follow">
+              <li id="top_li" class="linkedin"><a href="https://www.linkedin.com/in/manaut-berton-boitel-422060172/" target="_blank">LinkedIn</a></li>
+
+              <li class="behance"><a href="https://www.behance.net/manautberton-" target="_blank">Behance</a></li>
+
+              <li class="github"><a href="https://github.com/Manautbertonboitel" target="_blank">Github</a></li>
+
+              <li class="itch"><a href="https://manaut.itch.io/" target="_blank">itch.io</a></li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+      <svg>
+        <filter id="noise" x='0%' y='0%' width='100%' height='100%'>
+          <feTurbulence baseFrequency="0.01 0.02" result="NOISE" numOctaves="1" id="turbulence" />
+            <feDisplacementMap in="SourceGraphic" in2="NOISE" scale="20"></feDisplacementMap>
+        </filter>
+      </svg>
+    </main>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.1.1/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+    <script type="text/javascript">
+      var scene = document.getElementById('scene');
+      var parallaxInstance = new Parallax(scene);
+    </script>
+    <script type="text/javascript">
+      let el = document.getElementById('turbulence');
+
+      tl = new TimelineMax();
+
+      tl.from('.content', 5, {opacity: 0, ease: Power4.easeOut}, 1)
+      tl.from('.pic', 3, {opacity: 0, x:-100, y:-120, ease: Power4.easeOut}, 4.6)
+      tl.from('.linkedin', 3, {opacity: 0, ease: Power4.easeOut}, 2.2)
+      tl.from('.behance', 3, {opacity: 0, ease: Power4.easeOut}, 2.7)
+      tl.from('.github', 3, {opacity: 0, ease: Power4.easeOut}, 3.2)
+      tl.from('.itch', 3, {opacity: 0, ease: Power4.easeOut}, 3.7)
+      tl.to(el, 3, {attr: { baseFrequency: '0 0' }}, 4.1)
+
+      tl.play();
+    </script>
+  </body>
+</html>
