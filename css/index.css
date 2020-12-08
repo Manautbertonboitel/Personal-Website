@@ -1,8 +1,6 @@
 *{
   margin: 0;
   padding: 0;
-  /* overflow: hidden; */
-  text-rendering: geometricPrecision;
 }
 
 @font-face {
@@ -38,11 +36,13 @@ h1, h2 {
 }
 
 h1 {
+  letter-spacing: 1px;
+  padding-left: 12px;
   font-family: "helvetica", sans-serif;
   font-size: 63px;
   font-weight: 900;
-  backdrop-filter: blur(30px);
-  background-color: rgba(255, 255, 255, 0);
+
+  /*background-color: rgba(0, 0, 0, .2);*/
 }
 
 h2 {
@@ -70,15 +70,9 @@ a {
   overflow: visible;
   text-decoration: none;
   text-transform: uppercase;
-  background-image: url(../img/ornament.svg);
-  background-position: 0px 32px;
-  background-repeat: no-repeat;
-  background-color: rgba(0, 0, 0, 1);
-  background-blend-mode: color;
-  transition: .2s;
   font-family: "helveticath", serif;
   font-weight: 100;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 a:hover{
@@ -92,5 +86,5 @@ a:hover{
   bottom: -50px;
   left: -15px;
   z-index: -1;
-  filter: url(#noise)
+  /*filter: url(#noise)*/
 }
