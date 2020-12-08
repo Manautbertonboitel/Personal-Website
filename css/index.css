@@ -2,7 +2,18 @@
   margin: 0;
   padding: 0;
   /* overflow: hidden; */
+  text-rendering: geometricPrecision;
 }
+
+@font-face {
+  font-family: helvetica;
+  src: url(HelveticaNeueLTPro-Blk.otf);
+}
+@font-face {
+  font-family: helveticath;
+  src: url(HelveticaNeueLTPro-Th.otf);
+}
+
 
 body {
   background-color: #000000;
@@ -27,20 +38,17 @@ h1, h2 {
 }
 
 h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: "helvetica", sans-serif;
   font-size: 63px;
-  font-weight: 700;
+  font-weight: 900;
   backdrop-filter: blur(30px);
-  background-color: rgba(255, 255, 255, 0.05);
-}
-
-h2, a {
-  font-family: "EB Garamond", serif;
-  font-weight: 400;
-  font-size: 30px;
+  background-color: rgba(255, 255, 255, 0);
 }
 
 h2 {
+  font-family: "EB Garamond", serif;
+  font-weight: 400;
+  font-size: 24px;
   font-style: italic;
 }
 
@@ -57,23 +65,24 @@ li {
   overflow: visible;
 }
 
-#top_li {
-  margin-top: 0;
-}
-
 a {
+  letter-spacing: 4px;
   overflow: visible;
   text-decoration: none;
+  text-transform: uppercase;
   background-image: url(../img/ornament.svg);
   background-position: 0px 32px;
   background-repeat: no-repeat;
   background-color: rgba(0, 0, 0, 1);
   background-blend-mode: color;
-  transition-duration: .2s;
+  transition: .2s;
+  font-family: "helveticath", serif;
+  font-weight: 100;
+  font-size: 13px;
 }
 
 a:hover{
-  background-color: rgba(0, 0, 0, 0);
+  border-bottom: 1px solid white;
 }
 
 .photo {
