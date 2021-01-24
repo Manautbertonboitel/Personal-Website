@@ -43,7 +43,7 @@ header::before {
     top: -50%;
     left: -50%;
     z-index: -1;
-    background: url(../img/background.png) 0 0 repeat;
+    background: url(../img/background4.png) 0 0 repeat;
     background-size: 750px;
     transform: rotate(-16deg);
 }
@@ -321,7 +321,11 @@ main::after {
 }
 
 html, body, html *, body * {
-    cursor: none;
+    cursor: default;
+}
+
+a {
+    cursor: pointer;
 }
 
 .cursor-dot, .cursor-dot-outline {
@@ -335,12 +339,12 @@ html, body, html *, body * {
     transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
 }
 .cursor-dot {
-    width: 8px;
-    height: 8px;
+    width: 15px;
+    height: 15px;
     background-color: var(--color-text);
 }
 .cursor-dot-outline {
     border: 1px solid var(--color-text);;
-    width: 40px;
-    height: 40px;
+    width: 70px;
+    height: 70px;
 }

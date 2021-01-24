@@ -1,5 +1,5 @@
 var cursor = {
-    delay: 8,
+    delay: 10,
     _x: 0,
     _y: 0,
     endX: (window.innerWidth / 2),
@@ -17,22 +17,6 @@ var cursor = {
         this.setupEventListeners();
         this.animateDotOutline();
     },
-    
-//     updateCursor: function(e) {
-//         var self = this;
-        
-//         console.log(e)
-        
-//         // Show the cursor
-//         self.cursorVisible = true;
-//         self.toggleCursorVisibility();
-
-//         // Position the dot
-//         self.endX = e.pageX;
-//         self.endY = e.pageY;
-//         self.$dot.style.top = self.endY + 'px';
-//         self.$dot.style.left = self.endX + 'px';
-//     },
     
     setupEventListeners: function() {
         var self = this;
