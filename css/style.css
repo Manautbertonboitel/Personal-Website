@@ -35,7 +35,7 @@ body {
 	box-sizing: border-box;
 }
 
-header::before {
+/*header::before {
     content: "";
     position: absolute;
     width: 200%;
@@ -46,10 +46,13 @@ header::before {
     background: url(../img/background4.png) 0 0 repeat;
     background-size: 750px;
     transform: rotate(-16deg);
-}
+}*/
 
 
 header {
+    background-image: url(../img/ue4castle_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
     background-color: #0606064d;
     height: 95vh;
     display: flex;
