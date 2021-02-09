@@ -32,11 +32,11 @@ document.addEventListener("DOMContentLoaded", function(event) {
         initCursor = true;
       }
   
-      TweenLite.to(cursor, 0.1, {
+      TweenLite.to(cursor, 0.01, {
         top: mouseY + "px",
         left: mouseX + "px"
       });
-      TweenLite.to(outercursor, 0.5, {
+      TweenLite.to(outercursor, 0.25, {
         top: mouseY + "px",
         left: mouseX + "px"
       });
