@@ -410,28 +410,6 @@ a, svg {
     cursor: pointer;
 }
 
-/*
-.cursor-dot, .cursor-dot-outline {
-    pointer-events: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    border-radius: 50%;
-    opacity: 0;
-    transform: translate(-50%, -50%);
-    transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-.cursor-dot {
-    width: 15px;
-    height: 15px;
-    background-color: var(--color-text);
-}
-.cursor-dot-outline {
-    border: 1px solid var(--color-text);;
-    width: 70px;
-    height: 70px;
-}
-*/
 
 .cursor {
     position: fixed;
