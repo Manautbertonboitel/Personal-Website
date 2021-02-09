@@ -158,12 +158,41 @@ main::after {
     margin-right: 15px;
 }
 
+.separator--menu--footer {
+    display: flex;
+    margin-top: 12px;
+    justify-content: space-between;
+}
+
+.separator--menu--footer a {
+    text-transform: uppercase;
+    font-family: var(--text-font-family);
+    letter-spacing: 2px;
+    color: #efefef56;
+    font-size: 12px;
+    text-decoration: none;
+    margin-right: 15px;
+}
+
+.separator--menu--footer p {
+    text-transform: uppercase;
+    font-family: var(--text-font-family);
+    letter-spacing: 2px;
+    color: #efefef56;
+    font-size: 12px;
+    text-align: right;
+}
+
+.separator--menu--footer div {
+    width: 50%;
+}
+
 
 section {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 100vh;
+    min-height: 80vh;
 }
 
 .category {
@@ -253,38 +282,6 @@ section {
 .category-content a:hover span {
     display: block;
     animation: fadeIn .5s;
-}
-
-footer {
-    margin: 50px auto;
-    width: 90vw;
-}
-
-.footer--section {
-    display: flex;
-    margin-top: 12px;
-}
-
-.footer--section div {
-    width: 50%;
-}
-
-.footer--section div p {
-    text-align: right;
-    text-transform: uppercase;
-    font-family: var(--text-font-family);
-    letter-spacing: 2px;
-    color: #efefef56;
-    font-size: 12px;
-}
-
-.footer--section div a {
-    text-transform: uppercase;
-    font-family: var(--text-font-family);
-    letter-spacing: 2px;
-    color: #efefef56;
-    font-size: 12px;
-    text-decoration: none;
 }
 
 @keyframes fadeIn {
