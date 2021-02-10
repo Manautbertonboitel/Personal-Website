@@ -508,4 +508,8 @@ a, svg {
     .outer-cursor--link {
         display: none;
     }
+
+    html, body, html *, body * {
+        cursor: auto;
+    }
 }
