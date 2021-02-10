@@ -75,6 +75,8 @@ header {
     align-items: center;
     justify-content: center;
     min-height: 33vh;
+    word-break:normal;
+    text-align: center;
 }
 
 .bienvenue h2 {
@@ -353,7 +355,6 @@ section {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding-bottom: 100px;
     }
 
     .category-title {
