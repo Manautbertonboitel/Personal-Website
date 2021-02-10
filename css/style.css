@@ -491,3 +491,21 @@ a, svg {
     transform: translate(-50%, -50%) scale(1);
     background-color: var(--color-text);
 }
+
+@media only screen and (max-width: 768px) {
+    .cursor {
+        display: none;
+    }
+
+    .cursor--link {
+        display: none;
+    }
+
+    .outer-cursor {
+        display: none;
+    }
+
+    .outer-cursor--link {
+        display: none;
+    }
+}
