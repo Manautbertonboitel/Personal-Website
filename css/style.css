@@ -3,6 +3,7 @@ body {
 	--color-bg: #121111;
 	--color-link: #EFEFEF;
     --color-link-hover: #EFEFEF;
+    --secundary-text-color: #efefef92;
     --category-title-size: 170px;
     --category-title-line-height: 120px;
     --display-font-family: baskerville-poster-pt, serif;
@@ -31,6 +32,7 @@ body {
 	box-sizing: border-box;
 }
 
+/*
 header::before {
     content: "";
     position: absolute;
@@ -44,9 +46,25 @@ header::before {
     overflow: hidden;
     background-attachment: fixed;
 }
+*/
+body::after {
+	animation: grain 8s steps(10) infinite;
+	background-image: url(../img/noise2.png);
+	content: '';
+	height: 300%;
+	left: -50%;
+	opacity: 0.7;
+	position: fixed;
+	top: -100%;
+    width: 300%;
+    user-select: none!important;
+    z-index: -1;
+    overflow: hidden;
+}
+
 
 header {
-    background-color: #1211113b;
+    background-color: #12111179;
     height: 100vh;
     display: flex;
     flex-flow: column nowrap;
@@ -96,7 +114,7 @@ header {
     font-family: var(--text-font-family);
     letter-spacing: 2px;
     text-decoration: none;
-    color: #efefef56;
+    color: var(--secundary-text-color);
     margin: 0 10px;
 }
 
@@ -104,21 +122,6 @@ header {
     display: relative;
     font-family: var(--display-font-family);
     color: var(--color-text);
-}
-
-main::after {
-	animation: grain 8s steps(10) infinite;
-	background-image: url(../img/noise2.png);
-	content: '';
-	height: 300%;
-	left: -50%;
-	opacity: 0.7;
-	position: fixed;
-	top: -100%;
-    width: 300%;
-    user-select: none;
-    z-index: -1;
-    overflow: hidden;
 }
 
 @keyframes grain {
@@ -135,7 +138,9 @@ main::after {
 }
 
 .separator {
-    margin: 50px auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    margin: auto;
     width: 90vw;
 }
 
@@ -154,7 +159,7 @@ main::after {
     text-transform: uppercase;
     font-family: var(--text-font-family);
     letter-spacing: 2px;
-    color: #efefef56;
+    color: var(--secundary-text-color);
     font-size: 12px;
     text-decoration: none;
     margin-right: 15px;
@@ -170,7 +175,7 @@ main::after {
     text-transform: uppercase;
     font-family: var(--text-font-family);
     letter-spacing: 2px;
-    color: #efefef56;
+    color: var(--secundary-text-color);
     font-size: 12px;
     text-decoration: none;
     margin-right: 15px;
@@ -180,7 +185,7 @@ main::after {
     text-transform: uppercase;
     font-family: var(--text-font-family);
     letter-spacing: 2px;
-    color: #efefef56;
+    color: var(--secundary-text-color);
     font-size: 12px;
     text-align: right;
 }
@@ -241,7 +246,7 @@ section {
     text-transform: uppercase;
     font-size: 12px;
     font-family: var(--text-font-family);
-    color: #efefef56;
+    color: var(--secundary-text-color);
 }
 
 .category-content h4::before {
@@ -467,7 +472,7 @@ a, svg {
     background-color: var(--color-text);
     transition: transform 350ms ease;
     transform: translate(-50%, -50%) scale(.2);
-    z-index: 1000;
+    z-index: 4000;
 }
 .cursor--link {
     transform: translate(-50%, -50%) scale(.12);
@@ -486,7 +491,7 @@ a, svg {
     transition: background-color 350ms ease;
     background-color: transparent;
     transform: translate(-50%, -50%) scale(1);
-    z-index: 1000;
+    z-index: 4000;
 }
 .outer-cursor--link {
     transform: translate(-50%, -50%) scale(1);
@@ -513,4 +518,15 @@ a, svg {
     html, body, html *, body * {
         cursor: auto;
     }
+}
+
+
+video {
+    z-index: -100;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
