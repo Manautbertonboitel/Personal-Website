@@ -359,7 +359,7 @@ section {
     .category {
         flex-direction: column;
         justify-content: center;
-        align-items: center;
+        align-items: left;
     }
 
     .category-title {
@@ -404,6 +404,10 @@ section {
 
     header::before {
         background-attachment: local;
+    }
+
+    .external-link {
+        display: none;
     }
 }
 
@@ -529,4 +533,8 @@ video {
     position: absolute;
     top: 0;
     left: 0;
+}
+
+.external-link {
+    display: none;
 }
