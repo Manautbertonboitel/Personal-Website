@@ -1,6 +1,7 @@
 body {
     --color-text: #EFEFEF;
 	--color-bg: #121111;
+    --color-bg: #000;
 	--color-link: #EFEFEF;
     --color-link-hover: #EFEFEF;
     --secundary-text-color: #efefef92;
@@ -32,40 +33,14 @@ body {
 	box-sizing: border-box;
 }
 
-/*
-header::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    background-image: url(../img/ue4castle_background.png);
-    background-repeat: no-repeat;
-    background-size: cover;
+#container {
+    position: fixed!important;
+    width: 100vw;
+    height: 100vh;
     z-index: -1;
-    filter: contrast(1.2);
-    overflow: hidden;
-    background-attachment: fixed;
 }
-*/
-body::after {
-	animation: grain 8s steps(10) infinite;
-	background-image: url(../img/noise2.png);
-	content: '';
-	height: 300%;
-	left: -50%;
-	opacity: 0.7;
-	position: fixed;
-	top: -100%;
-    width: 300%;
-    user-select: none!important;
-    z-index: -1;
-    overflow: hidden;
-}
-
 
 header {
-    background-color: #12111179;
-    height: 100vh;
     display: flex;
     flex-flow: column nowrap;
     align-items: center;
@@ -81,13 +56,18 @@ nav {
     padding-top: 50px;
     padding-bottom: 50px;
     width: 100%;
-
-    border-bottom: solid 1px #121111;
 }
 
 .navbar {
     margin: auto;
     width: 90vw;
+    display: flex;
+    justify-content: space-between;
+}
+
+.name {
+    /* font-weight: 300!important; */
+    
 }
 
 .navbar a {
@@ -95,9 +75,18 @@ nav {
     font-family: var(--text-font-family);
     letter-spacing: 2px;
     color: var(--secundary-text-color);
+    font-weight: 700;
     font-size: 12px;
     text-decoration: none;
     margin-right: 15px;
+}
+
+.navbar-line {
+    display: none;
+    margin-top: 50px;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(239, 239, 239, 0.1);
 }
 
 .name-title {
@@ -131,6 +120,8 @@ nav {
     align-items: center;
     justify-content: space-between;
     min-height: 33vh;
+
+    display: none;
 }
 
 .links a {
@@ -147,19 +138,6 @@ nav {
     display: relative;
     font-family: var(--display-font-family);
     color: var(--color-text);
-}
-
-@keyframes grain {
-  0%, 100% { transform:translate(0, 0); }
-  10% { transform:translate(-5%, -10%); }
-  20% { transform:translate(-15%, 5%); }
-  30% { transform:translate(7%, -25%); }
-  40% { transform:translate(-5%, 25%); }
-  50% { transform:translate(-15%, 10%); }
-  60% { transform:translate(15%, 0%); }
-  70% { transform:translate(0%, 15%); }
-  80% { transform:translate(3%, 35%); }
-  90% { transform:translate(-10%, 10%); }
 }
 
 .separator {
@@ -224,29 +202,24 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
-    min-height: 80vh;
+    min-height: 100vh;
+    margin-top: 100px;
+    margin-bottom: 100px;
 }
 
 .category {
-    display: flex;
-    justify-content: space-around;
-    width: 90vw;
-}
-
-.category-title {
-    width: 50%;
+    width: 80%;
 }
 
 .category-title h3 {
-    text-align: right;
     line-height: var(--category-title-line-height);
     font-size: var(--category-title-size);
 }
 
 .category-content {
-    width: 50%;
-    margin-top: 150px;
     counter-reset: menu;
+    margin-left: 30px;
+    margin-top: 30px;
 }
 
 #alinea::before {
@@ -495,25 +468,27 @@ a, svg {
     opacity: 0;
     pointer-events: none;
     mix-blend-mode: difference;
-    width: 100px;
-    height: 100px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background-color: var(--color-text);
     transition: transform 350ms ease;
-    transform: translate(-50%, -50%) scale(.2);
-    z-index: 4000;
+    transform: translate(-50%, -50%) scale(1);
+    z-index: 1;
 }
 .cursor--link {
-    transform: translate(-50%, -50%) scale(.12);
+    background-color: var(--color-text);
+    transform: translate(-50%, -50%) scale(.95);
 }
 
 .outer-cursor {
+    display: none;
     position: fixed;
     opacity: 0;
     pointer-events: none;
     mix-blend-mode: difference;
-    width: 100px;
-    height: 100px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     border: 1px solid var(--color-text);
     transition: transform 350ms ease;

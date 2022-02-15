@@ -17,23 +17,16 @@
         <meta name="description" content="Manaut Berton-Boitel, Student in Game & Level Design">
         <title>Manaut Berton-Boitel</title>
         <link rel="stylesheet" href="css/style.css">
-        <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://use.typekit.net/vdq0qnd.css">
         <link rel="icon" type="image/png" href="img/favicon.png">
     </head>
     
     <body>
+        <div id="container"></div>
         <header id="header">
-            <video poster="img/ue4castle_background.png" id="bgvid" playsinline autoplay muted loop>
-                <source src="video//2021-02-12 19-49-51-1.m4v" type="video/mp4">
-            </video>
-            <div class="name-title">
-                <h1>Manaut Berton-Boitel</h1>
-            </div>
-            <div class="bienvenue">
-                <h2>Hello there!</h2>
-            </div>
             <div class="links">
                 <a href="#about">About me</a>
                 <a href="#productions">Productions</a>
@@ -43,30 +36,28 @@
 
         <nav>
             <div class="navbar">
-                <a href="">about me</a>
-                <a href="">productions</a>
-                <a href="">links & socials</a>
+                <div>
+                    <a class="name" href="https://manautbertonboitel.com">Manaut Berton-Boitel</a>
+                </div>
+                <div>
+                    <a href="">about me</a>
+                    <a href="">productions</a>
+                    <a href="">links & socials</a>
+                    <div class="navbar-line"></div>
+                </div>
+                
             </div>
         </nav>
 
         <main>
-            <div class="separator" id="about">
-                <div class="line"></div>
-                <div class="separator--menu">
-                    <a href="#about">about me</a>
-                    <a href="#productions">productions</a>
-                    <a href="#links">links & socials</a>
-                </div>
-            </div>
-    
             <section>
                 <div class="category">
                     <div class="category-title">
-                        <h3>About<br>me</h3>
+                        <h3>About me</h3>
                     </div>
                     <div class="category-content">
                         <p id="alinea">
-                            Studying Management & Game Production @ CNAM ENJMIN, Angoulême, web developer in my spare time. I am learning every day about new technologies, 
+                            Studying Management & Game Production <a href="https://manautbertonboitel.com">@CNAM ENJMIN</a>, Angoulême, web developer in my spare time. I am learning every day about new technologies, 
                             game development, C# scripting & Unreal Engine blueprints. Already done a few Unity projects as well as Ruby on Rails web applications. 
                             <br/>I eat chocolatine.
                         </p>
@@ -74,20 +65,11 @@
                     </div>
                 </div>
             </section>
-            
-            <div class="separator" id="productions">
-                <div class="line"></div>
-                <div class="separator--menu">
-                    <a href="#about">about me</a>
-                    <a href="#productions">productions</a>
-                    <a href="#links">links & socials</a>
-                </div>
-            </div>
-    
+
             <section>
                 <div class="category">
                     <div class="category-title">
-                        <h3 data-scroll-speed="8">Produc-<br>tions</h3>
+                        <h3 data-scroll-speed="8">Work</h3>
                     </div>
                     <div class="category-content">
                         <!-- <h4><a><span><img src="img/ue4castle.png" alt="Some image"/></span>_coming soon_WIP UE4 Project<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></h4>-->
@@ -101,15 +83,6 @@
                     </div>
                 </div>
             </section>  
-            
-            <div class="separator" id="links">
-                <div class="line"></div>
-                <div class="separator--menu">
-                    <a href="#about">about me</a>
-                    <a href="#productions">productions</a>
-                    <a href="#links">links & socials</a>
-                </div>
-            </div>
     
             <section>
                 <div class="category">
@@ -126,6 +99,7 @@
                     </div>
                 </div>
             </section>
+            
             <div class="separator">
                 <div class="line"></div>
                 <div class="separator--menu--footer">
@@ -140,6 +114,8 @@
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+        <script src="js/grained.js"></script>
+        <script src="js/grain.js"></script>
 
         <script src="js/cursor.js"></script>
     </body>
