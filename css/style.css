@@ -9,7 +9,9 @@ body {
     --category-title-line-height: 120px;
     --display-font-family: baskerville-poster-pt, serif;
     --text-font-family: 'Roboto', sans-serif;
-    --text-size: 20px;
+    --text-size: 18px;
+    --text-size-secondary: 10px;
+    --text-size-tertiary: 11px;
     color: var(--color-text);
     background-color: var(--color-bg);
     -webkit-font-smoothing: antialiased;
@@ -38,6 +40,7 @@ body {
     width: 100vw;
     height: 100vh;
     z-index: -1;
+    top: 0;
 }
 
 header {
@@ -65,18 +68,18 @@ nav {
     justify-content: space-between;
 }
 
-.name {
-    /* font-weight: 300!important; */
+/* .name {
+    font-weight: 300!important;
     
-}
+} */
 
 .navbar a {
     text-transform: uppercase;
     font-family: var(--text-font-family);
-    letter-spacing: 2px;
+    letter-spacing: 1.5px;
     color: var(--secundary-text-color);
     font-weight: 700;
-    font-size: 12px;
+    font-size: var(--text-size-tertiary);
     text-decoration: none;
     margin-right: 15px;
 }
@@ -140,7 +143,7 @@ nav {
     color: var(--color-text);
 }
 
-.separator {
+footer {
     padding-top: 50px;
     padding-bottom: 50px;
     margin: auto;
@@ -152,51 +155,6 @@ nav {
     height: 1px;
     background-color: rgba(239, 239, 239, 0.1);
 }
-
-.separator--menu {
-    display: flex;
-    margin-top: 12px;
-}
-
-.separator--menu a {
-    text-transform: uppercase;
-    font-family: var(--text-font-family);
-    letter-spacing: 2px;
-    color: var(--secundary-text-color);
-    font-size: 12px;
-    text-decoration: none;
-    margin-right: 15px;
-}
-
-.separator--menu--footer {
-    display: flex;
-    margin-top: 12px;
-    justify-content: space-between;
-}
-
-.separator--menu--footer a {
-    text-transform: uppercase;
-    font-family: var(--text-font-family);
-    letter-spacing: 2px;
-    color: var(--secundary-text-color);
-    font-size: 12px;
-    text-decoration: none;
-    margin-right: 15px;
-}
-
-.separator--menu--footer p {
-    text-transform: uppercase;
-    font-family: var(--text-font-family);
-    letter-spacing: 2px;
-    color: var(--secundary-text-color);
-    font-size: 12px;
-    text-align: right;
-}
-
-.separator--menu--footer div {
-    width: 50%;
-}
-
 
 section {
     display: flex;
@@ -238,11 +196,11 @@ section {
     font-family: var(--text-font-family);
 }
 
-.internship {
-    margin-top: 12px;
+.comment {
+    margin-top: 10px;
     letter-spacing: 1px;
     text-transform: uppercase;
-    font-size: 12px;
+    font-size: var(--text-size-secondary);
     font-family: var(--text-font-family);
     color: var(--secundary-text-color);
 }
@@ -308,6 +266,35 @@ section {
 
 .category-content a:hover .external-link {
     stroke-width: 2px;
+}
+
+.footer-menu {
+    display: flex;
+    margin-top: 12px;
+    justify-content: space-between;
+}
+
+.footer-menu a {
+    text-transform: uppercase;
+    font-family: var(--text-font-family);
+    letter-spacing: 2px;
+    color: var(--secundary-text-color);
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: var(--text-size-secondary);
+}
+
+.footer-menu p {
+    text-transform: uppercase;
+    font-family: var(--text-font-family);
+    letter-spacing: 2px;
+    color: var(--secundary-text-color);
+    text-align: right;
+    font-size: var(--text-size-secondary);
+}
+
+.footer-menu div {
+    width: 50%;
 }
 
 @media only screen and (max-width: 1319px) {
@@ -434,11 +421,11 @@ section {
         font-size: 8px;
     }
 
-    .separator--menu--footer a {
+    .footer-menu a {
         font-size: 8px;
     }
 
-    .separator--menu--footer p {
+    .footer-menu p {
         font-size: 8px;
     }
 }
