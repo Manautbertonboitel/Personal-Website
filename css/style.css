@@ -35,7 +35,7 @@ body {
 	box-sizing: border-box;
 }
 
-#container {
+#backgroundNoise {
     position: fixed!important;
     width: 100vw;
     height: 100vh;
@@ -148,6 +148,7 @@ footer {
     padding-bottom: 50px;
     margin: auto;
     width: 90vw;
+    z-index: 100;
 }
 
 .line {
@@ -465,7 +466,7 @@ a, svg {
 }
 .cursor--link {
     background-color: var(--color-text);
-    transform: translate(-50%, -50%) scale(.95);
+    transform: translate(-50%, -50%) scale(.90);
 }
 
 .outer-cursor {

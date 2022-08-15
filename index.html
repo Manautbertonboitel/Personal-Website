@@ -17,6 +17,7 @@
         <meta name="description" content="Manaut Berton-Boitel, Student in Game & Level Design">
         <title>Manaut Berton-Boitel</title>
         <link rel="stylesheet" href="css/style.css">
+        <!-- <link rel="stylesheet" href="css/locomotive-scroll.css"> -->
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;700&display=swap" rel="stylesheet">
@@ -25,27 +26,27 @@
     </head>
     
     <body id="header">
-        <div id="container"></div>
+        <div id="backgroundNoise"></div>
         <nav>
             <div class="navbar">
                 <div>
                     <a class="name" href="https://manautbertonboitel.com">Manaut Berton-Boitel</a>
                 </div>
                 <div>
-                    <a href="">about me</a>
-                    <a href="">productions</a>
-                    <a href="">links & socials</a>
+                    <a href="#about">about me</a>
+                    <a href="#work">productions</a>
+                    <a href="#links">links & socials</a>
                     <div class="navbar-line"></div>
                 </div>
                 
             </div>
         </nav>
 
-        <main>
-            <section>
+        <main data-scroll-container>
+            <section data-scroll-section>
                 <div class="category">
-                    <div class="category-title">
-                        <h3>About me</h3>
+                    <div class="category-title" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-2">
+                        <h3 id="about">About me</h3>
                     </div>
                     <div class="category-content">
                         <p id="alinea">
@@ -53,50 +54,52 @@
                             game development, C# scripting & Unreal Engine blueprints. Already done a few Unity projects as well as Ruby on Rails web applications. 
                             <br/>I eat chocolatine.
                         </p>
-                        <p class="comment">currently searching for an internship in Game Production for early 2022</p>
+                        <p class="comment">currently searching for an internship in Game Production / associate producer for February 2023</p>
                     </div>
                 </div>
             </section>
 
-            <section>
+            <section data-scroll-section>
                 <div class="category">
-                    <div class="category-title">
-                        <h3 data-scroll-speed="8">Work</h3>
+                    <div class="category-title" data-scroll data-scroll-direction="horizontal" data-scroll-speed="2">
+                        <h3 id="work" data-scroll-speed="8">Work</h3>
                     </div>
                     <div class="category-content">
                         <!-- <h4><a><span><img src="img/ue4castle.png" alt="Some image"/></span>_coming soon_WIP UE4 Project<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></h4>-->
+                        <h4><a href="https://manaut.itch.io/404-airport">"Mirage"<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a><p class="comment">Master's first year studies project</p></h4>
+                        <h4><a href="https://manaut.itch.io/imperium">"Imperium"<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a><p class="comment">Bachelor's end of studies project</p></h4>
                         <h4><a href="https://manaut.itch.io/404-airport">"404 airport" lost & found simulation<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a><p class="comment">EMMI Global Game Jam 2021 - first prize</p></h4>
-                        <h4><a href="https://manaut.itch.io/asteroids"><span><img src="img/asteroids.png" alt="Some image"/></span>"Asteroids" replica<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></h4>
-                        <h4><a href="https://jalik.itch.io/arbitrium"><span><img src="img/arbitrium.png" alt="Some image"/></span>"Arbitrium" - narrative game<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a><p class="comment">Unijam Game Jam 2020 - best graphics prize</p></h4>
-                        <h4><a href="https://manaut.itch.io/youllnevershineifyoudontglow"><span><img src="img/shootingstars.png" alt="Some image"/></span>"Shooting Stars" - arcade space<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></h4>
-                        <h4><a href="https://nichouel.itch.io/night-maze">"Night Maze"<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a><p class="comment">EMMI Game Jam 2020 - best concept prize</p></h4>
-                        <h4><a href="https://kleidi.org/"><span><img src="img/kleidi.png" alt="Some image"/></span>"Kleidi" - visual art accessible to person with visual disability<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></h4>
-                        <h4><a href="https://pizzaiojo.fr/"><span><img src="img/pizzaiojo.png" alt="Some image"/></span>"PizzaïoJo" - Pizzeria web_app<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></h4>
+                        <h4><a href="https://manaut.itch.io/asteroids"><!-- <span><img src="img/asteroids.png" alt="Some image"/></span> -->"Asteroids" replica<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></h4>
+                        <h4><a href="https://jalik.itch.io/arbitrium"><!-- <span><img src="img/arbitrium.png" alt="Some image"/></span> -->"Arbitrium" - narrative game<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a><p class="comment">Unijam Game Jam 2020 - best graphics prize</p></h4>
+                        <!-- <h4><a href="https://manaut.itch.io/youllnevershineifyoudontglow"><span><img src="img/shootingstars.png" alt="Some image"/></span>"Shooting Stars" - arcade space<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></h4>
+                        <h4><a href="https://nichouel.itch.io/night-maze">"Night Maze"<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a><p class="comment">EMMI Game Jam 2020 - best concept prize</p></h4> -->
+                        <h4><a href="https://kleidi.org/"><!-- <span><img src="img/kleidi.png" alt="Some image"/></span> -->"Kleidi" - visual art accessible to person with visual disability<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></h4>
+                        <h4><a href="https://pizzaiojo.fr/"><!-- <span><img src="img/pizzaiojo.png" alt="Some image"/></span> -->"PizzaïoJo" - Pizzeria web_app<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></h4>
                     </div>
                 </div>
             </section>  
     
-            <section>
+            <section data-scroll-section>
                 <div class="category">
-                    <div class="category-title">
-                        <h3>Links &<br>Socials</h3>
+                    <div class="category-title" data-scroll data-scroll-direction="horizontal" data-scroll-speed="-2" data-scroll-delay="0.1">
+                        <h3 id="links">Links &<br>Socials</h3>
                     </div>
                     <div class="category-content">
-                        <h4><a href="https://manaut.itch.io/">Itch.io<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a><p class="comment">Discover more of my game creations!</p></h4>
-                        <h4><a href="https://github.com/Manautbertonboitel">Github<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></h4>
-                        <h4><a href="https://www.behance.net/manautberton-">Behance<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></h4>
-                        <h4><a href="https://www.linkedin.com/in/manaut-berton-boitel-422060172/">LinkedIn<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></h4>
-                        <h4><a href="https://directory.opquast.com/fr/certificat/X9G1J6/">OpQuast certification<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></h4>
-                        <h4><a href="img/CV en Game Design Student.pdf">cv_resume<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></h4>
+                        <h4 data-scroll data-scroll-speed="2" data-scroll-delay="0.1"><a href="https://manaut.itch.io/">Itch.io<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a><p class="comment">Discover more of my game creations!</p></h4>
+                        <h4 data-scroll data-scroll-speed="2" data-scroll-delay="0.2"><a href="https://github.com/Manautbertonboitel">Github<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></h4>
+                        <h4 data-scroll data-scroll-speed="2" data-scroll-delay="0.3"><a href="https://www.behance.net/manautberton-">Behance<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></h4>
+                        <h4 data-scroll data-scroll-speed="2" data-scroll-delay="0.4"><a href="https://www.linkedin.com/in/manaut-berton-boitel-422060172/">LinkedIn<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></h4>
+                        <h4 data-scroll data-scroll-speed="2" data-scroll-delay="0.5"><a href="https://directory.opquast.com/fr/certificat/X9G1J6/">OpQuast certification<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></h4>
+                        <h4 data-scroll data-scroll-speed="2" data-scroll-delay="0.6"><a href="img/CV 2022.pdf">cv_resume<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></h4>
                     </div>
                 </div>
             </section>
             
-            <footer>
+            <footer data-scroll-section>
                 <div class="line"></div>
                 <div class="footer-menu">
                     <a href="#header">back to top</a>
-                    <div><p>© Copyright Manaut Berton-Boitel, all rights reserved</p></div>
+                    <div><p>Copyright © 2022 Manaut Berton-Boitel, all rights reserved</p></div>
                 </div>
             </footer>
         </main>
@@ -110,5 +113,13 @@
         <script src="js/grain.js"></script>
 
         <script src="js/cursor.js"></script>
+
+        <!-- <script src="js/locomotive-scroll.min.js"></script>
+        <script>
+            const scroll = new LocomotiveScroll({
+                el: document.querySelector('[data-scroll-container]'),
+                smooth: true
+            });
+        </script> -->
     </body>
 </html>

@@ -7,4 +7,4 @@ var options = {
   "grainWidth": 1,
   "grainHeight": 1
 };
-grained("#container", options);
+grained("#backgroundNoise", options);
