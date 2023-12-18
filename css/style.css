@@ -1,5 +1,5 @@
 body {
-    --color-text: #EFEFEF;
+    --color-text: #efefefbe;
 	--color-bg: #121111;
     --color-bg: #000;
 	--color-link: #EFEFEF;
@@ -10,7 +10,7 @@ body {
     --display-font-family: baskerville-poster-pt, serif;
     --text-font-family: 'Roboto', sans-serif;
     --text-size: 18px;
-    --text-size-secondary: 10px;
+    --text-size-secondary: 11px;
     --text-size-tertiary: 11px;
     color: var(--color-text);
     background-color: var(--color-bg);
@@ -131,7 +131,7 @@ nav {
     text-align: center;
     text-transform: uppercase;
     font-family: var(--text-font-family);
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
     text-decoration: none;
     color: var(--secundary-text-color);
     margin: 0 10px;
@@ -162,7 +162,7 @@ section {
     align-items: center;
     justify-content: center;
     min-height: 100vh;
-    margin-top: 100px;
+    /* margin-top: 100px; */
     margin-bottom: 100px;
 }
 
@@ -173,12 +173,13 @@ section {
 .category-title h3 {
     line-height: var(--category-title-line-height);
     font-size: var(--category-title-size);
+    margin-bottom: 30px;
 }
 
 .category-content {
     counter-reset: menu;
-    margin-left: 30px;
-    margin-top: 30px;
+    /* margin-left: 30px; */
+    
 }
 
 #alinea::before {
@@ -224,7 +225,7 @@ section {
 
 .category-content a {
     font-family: var(--text-font-family);
-    letter-spacing: 2px;
+    /* letter-spacing: 2px; */
     text-decoration: none;
     color: var(--color-text);
 }
@@ -354,15 +355,15 @@ section {
 
     .category-title h3 {
         text-align: left;
+        margin-bottom: 50px;
     }
 
     .category-content {
         width: auto;
-        margin-top: 50px;
     }
 
     .category-content p {
-        margin-left: 10px;
+        /* margin-left: 10px; */
     }
 
     .category-content h4 {
