@@ -138,9 +138,10 @@ nav {
 }
 
 .links a:hover {
-    display: relative;
+    /* display: relative;
     font-family: var(--display-font-family);
-    color: var(--color-text);
+    color: var(--color-text); */
+    letter-spacing: 100px;
 }
 
 footer {
@@ -228,10 +229,14 @@ section {
     /* letter-spacing: 2px; */
     text-decoration: none;
     color: var(--color-text);
+
+    transition: font-weight .2s ease-in-out;
 }
 
 .category-content a:hover {
-    font-family: var(--display-font-family);
+    /* font-family: var(--display-font-family); */
+    font-weight: 900;
+    
 }
 
 .category-content a span {
