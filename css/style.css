@@ -17,6 +17,7 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
+blipbloup
 
 * {
     margin: 0;
@@ -501,7 +502,7 @@ a, svg {
         display: none;
     }
 
-    .cursor--link {
+    .cursor--link 
         display: none;
     }
 
