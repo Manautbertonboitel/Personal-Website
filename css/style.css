@@ -1,3 +1,11 @@
+@font-face {
+    font-family: 'voyagebold';
+    src: url('../font/voyage-bold-webfont.woff2') format('woff2'),
+         url('../font/voyage-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body {
     --color-text: #efefefbe;
 	--color-bg: #121111;
@@ -7,7 +15,7 @@ body {
     --secundary-text-color: #efefef92;
     --category-title-size: 170px;
     --category-title-line-height: 120px;
-    --display-font-family: baskerville-poster-pt, serif;
+    --display-font-family: "voyagebold", serif;
     --text-font-family: 'Roboto', sans-serif;
     --text-size: 18px;
     --text-size-secondary: 11px;
@@ -17,7 +25,6 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-blipbloup
 
 * {
     margin: 0;
@@ -176,6 +183,7 @@ section {
     line-height: var(--category-title-line-height);
     font-size: var(--category-title-size);
     margin-bottom: 30px;
+    font-family: var(--display-font-family);
 }
 
 .category-content {
@@ -207,6 +215,7 @@ section {
     font-size: var(--text-size-secondary);
     font-family: var(--text-font-family);
     color: var(--secundary-text-color);
+    font-weight: 700;
 }
 
 .category-content h4::before {
@@ -502,7 +511,7 @@ a, svg {
         display: none;
     }
 
-    .cursor--link 
+    .cursor--link {
         display: none;
     }
 
