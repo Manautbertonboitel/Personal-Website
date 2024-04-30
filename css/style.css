@@ -208,6 +208,15 @@ section {
     font-family: var(--text-font-family);
 }
 
+.category-content-video-container {
+    display: flex;
+    
+}
+
+.category-content-video {
+
+}
+
 .comment {
     margin-top: 10px;
     letter-spacing: 1px;
