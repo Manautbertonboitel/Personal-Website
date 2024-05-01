@@ -2,7 +2,7 @@
 <html lang="fr" dir="ltr">
     
     <head>
-        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <!-- Global site tag (gtag.js) - Google Analytics
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-R7J2SXL68J"></script>
         <script>
             window.dataLayer = window.dataLayer || [];
@@ -10,39 +10,56 @@
             gtag('js', new Date());
 
             gtag('config', 'G-R7J2SXL68J');
-        </script>
+        </script> -->
 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="description" content="Manaut Berton-Boitel, Student in Game & Level Design">
         <title>Manaut Berton-Boitel</title>
+        <!-- Personnal CSS -->
         <link rel="stylesheet" href="css/style.css">
-        <!-- <link rel="stylesheet" href="css/locomotive-scroll.css"> -->
+        <link rel="stylesheet" href="css/navbar.css">
+        <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+        <!-- Adobe Fonts -->
         <link rel="stylesheet" href="https://use.typekit.net/vdq0qnd.css">
+        <!-- Favicon -->
         <link rel="icon" type="image/png" href="img/favicon.png">
     </head>
     
-    <body id="header">
+    <body class="body">
         <div id="backgroundNoise"></div>
-        <nav>
-            <div class="navbar">
-                <div>
-                    <a class="name" href="https://manautbertonboitel.com">Manaut Berton-Boitel</a>
+        <nav id="targetNav">
+            <div class="navbar" id="originNav">
+                <div class="name">
+                    <a href="#about">Manaut Berton-Boitel</a>
                 </div>
-                <div>
-                    <a href="#about">about me</a>
-                    <a href="#work">productions</a>
+                <div class="header__main__navs">
+                    <!-- <a href="#about">about me</a> -->
+                    <a href="#cinematic">cinematic & video editing</a>
+                    <a href="#work">Game producing</a>
                     <a href="#links">links & socials</a>
-                    <div class="navbar-line"></div>
                 </div>
-                
+                <!-- HAMBURGER -->
+                <div class="header__main__navs__button__container">
+                    <div class="header__main__navs__button">
+                        <button>
+                            <div class="button__stroke"></div>
+                            <div class="button__stroke"></div>
+                        </button>
+                    </div>
+                </div>
+                <div class="header__main__navs--collapse">
+                    <a class="toggle1" href="#cinematic">cinematic & video editing</a>
+                    <a class="toggle2" href="#work">Game producing</a>
+                    <a class="toggle3" href="#links">links & socials</a>
+                </div>
             </div>
         </nav>
 
-        <main data-scroll-container>
+        <main id="about" data-scroll-container>
             <section data-scroll-section>
                 <div class="category">
                     <div class="category-content">
@@ -59,7 +76,7 @@
                             <br> -->
                             Studied Management & Game Production at <a href="https://enjmin-en.cnam.fr/about-our-program-1036450.kjsp?RH=1487090762878&RF=1542120634157">CNAM ENJMIN</a>, Angoulême. <br>
                             Studied Game & Level Design at <a href="https://iutb.univ-paris13.fr/formations/metiers-du-multimedia-et-de-linternet/licence-pro-metiers-du-jeu-video/">IUT Bobigny</a>, Paris. <br>
-                            Studied Web & visual design at <a href="https://www.mmibordeaux.com/">MMI Bordeaux</a>, Bordeaux. 
+                            Studied Video, Visual Design & Web Development at <a href="https://www.mmibordeaux.com/">MMI Bordeaux</a>, Bordeaux. 
                             <br>
                             <br>
                             I eat chocolatine.
@@ -69,16 +86,92 @@
                 </div>
             </section>
 
-            <section data-scroll-section>
+            <section id="cinematic" data-scroll-section>
                 <div class="category">
                     <div class="category-title" data-scroll data-scroll-direction="horizontal" data-scroll-speed="2">
-                        <h3 id="work" data-scroll-speed="8">Work</h3>
+                        <h3 data-scroll-speed="8">Cinematic & Video editing</h3>
                     </div>
                     <div class="category-content">
-                        <h4><a href="https://www.flightsimulator.com/">"Microsoft Flight Simulator 2024"<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a><p class="comment">Associate Producer</p></h4>
-                        <h4><a href="https://manaut.itch.io/death-of-internet">"Death Of Internet"<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a><p class="comment">Producer, Master's second (last) year studies project</p></h4>
-                        <h4><a href="https://manaut.itch.io/mirage">"Mirage"<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a><p class="comment">Producer & Developer, Master's first year studies project</p></h4>
-                        <h4><a href="https://manaut.itch.io/imperium">"Imperium"<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a><p class="comment">Producer & Developer, Bachelor's end of studies project</p></h4>
+                        <div class="category-content-video-container">
+                            <div class="category-content-video">
+                                <iframe class="video" src="https://www.youtube.com/embed/TuCRYNTomwM?si=ANeg0DtBU_HyW4ah" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <h4>
+                                    <a href="">Death of internet - teaser</a>
+                                    <p class="comment">
+                                        Unreal Engine 5, premiere pro & after effects, 3 days - 2023
+                                        <br><br>
+                                        In collaboration with a sound designer we created this teaser for our master's second year studies project.
+                                        <br><br>
+                                        As the game is a walking simulator focused on contemplation and voyeurism, shots were thoughts to showcase the environment, and an ever growing tension to tease the narrative aspect.
+                                        <br><br>
+                                        Glitch, internet and electronics are strong intention pillars, and have been used thoughout the whole teaser to create coherence.
+                                    </p>
+                                </h4>
+                            </div>
+                            <div class="category-content-video">
+                                <iframe class="video" src="https://www.youtube.com/embed/NHZKgvffCxo?si=IWxSotNbi-qmqGup" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <h4>
+                                    <a href="">Noutic'Zik - volunteers recruitment</a>
+                                    <p class="comment">
+                                        premiere pro & after effects, 4 days - 2023
+                                        <br><br>
+                                        promotion video aimed to recruit volunteers for a music festival, but also to announce and hype the regular festival goers about the 2023 edition.
+                                        <br><br>
+                                        While the 2022 edition was canceled, a strong energy struck the festival-goers and volunteers. I tried to capture this energy to transform it into hope and motivation for the year 2023. 
+                                    </p>
+                                </h4>
+                            </div>
+                            <div class="category-content-video">
+                                <iframe class="video" src="https://www.youtube.com/embed/_OGt9SexLJ0?si=2o7Gr6FsZELfQ5AX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <h4>
+                                    <a href="">Imperium - teaser</a>
+                                    <p class="comment">
+                                        blender, premiere pro & after effects, 3 days - 2021
+                                        <br><br>
+                                        Imperium is a game centered around a society under the watchful eye and control of a dictatorial government employing AI.
+                                        <br><br>
+                                        The eye, or "vision" symbolism permeates many elements of this game, and we aimed to underscore it prominently in the teaser through the dolly-zoom effect, albeit it may be somewhat overused.
+                                        <br><br>
+                                        Additionally, other narrative and gameplay pillars, such as control over information, are depicted through monochromatic colors, except for red, drawing attention to data transfer and violence.
+                                    </p>
+                                </h4>
+                            </div>
+                            <div class="category-content-video">
+                                <iframe class="video" src="https://www.youtube.com/embed/H9BhsJfOJ2g?si=ctdzQ52S0ID_eQX9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                                <h4>
+                                    <a href="">Mirage - teaser</a>
+                                    <p class="comment">
+                                        unity & premiere pro, 2 days - 2022
+                                    </p>
+                                </h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>  
+
+            <section id="work" data-scroll-section>
+                <div class="category">
+                    <div class="category-title" data-scroll data-scroll-direction="horizontal" data-scroll-speed="2">
+                        <h3 data-scroll-speed="8">Game Producing</h3>
+                    </div>
+                    <div class="category-content">
+                        <h4>
+                            <a href="https://www.flightsimulator.com/">"Microsoft Flight Simulator 2024"<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+                            <p class="comment">Associate Producer</p>
+                        </h4>
+                        <h4>
+                            <a href="https://manaut.itch.io/death-of-internet">"Death Of Internet"<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+                            <p class="comment">Producer, Master's second (last) year studies project</p>
+                        </h4>
+                        <h4>
+                            <a href="https://manaut.itch.io/mirage">"Mirage"<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+                            <p class="comment">Producer & Programmer, Master's first year studies project</p>
+                        </h4>
+                        <h4>
+                            <a href="https://manaut.itch.io/imperium">"Imperium"<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a>
+                            <p class="comment">Producer & Programmer, Bachelor's end of studies project</p>
+                        </h4>
                         
                         <!-- <h4><a href="https://manaut.itch.io/404-airport">"404 airport" lost & found simulation<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a><p class="comment">Developer & Game Designer, EMMI Global Game Jam 2021 - first prize</p></h4>
                         <h4><a href="https://manaut.itch.io/asteroids"><span><img src="img/asteroids.png" alt="Some image"/></span>"Asteroids" replica<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></h4>
@@ -87,33 +180,6 @@
                         <h4><a href="https://nichouel.itch.io/night-maze">"Night Maze"<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a><p class="comment">EMMI Game Jam 2020 - best concept prize</p></h4>
                         <h4><a href="https://kleidi.org/"><span><img src="img/kleidi.png" alt="Some image"/></span>"Kleidi" - visual art accessible to person with visual disability<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></h4>
                         <h4><a href="https://pizzaiojo.fr/"><span><img src="img/pizzaiojo.png" alt="Some image"/></span>"PizzaïoJo" - Pizzeria web_app<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a></h4> -->
-                    </div>
-                </div>
-            </section>  
-
-            <section data-scroll-section>
-                <div class="category">
-                    <div class="category-title" data-scroll data-scroll-direction="horizontal" data-scroll-speed="2">
-                        <h3 id="work" data-scroll-speed="8">Video demoreel</h3>
-                    </div>
-                    <div class="category-content">
-                        <div class="category-content-video-container">
-                            <div class="category-content-video">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/TuCRYNTomwM?si=ANeg0DtBU_HyW4ah" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            </div>
-                            <div class="category-content-video">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/TuCRYNTomwM?si=ANeg0DtBU_HyW4ah" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            </div>
-                            <div class="category-content-video">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/TuCRYNTomwM?si=ANeg0DtBU_HyW4ah" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            </div>
-                            <div class="category-content-video">
-                                <iframe width="560" height="315" src="https://www.youtube.com/embed/TuCRYNTomwM?si=ANeg0DtBU_HyW4ah" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                            </div>
-                        </div>
-                        <h4><a href="https://manaut.itch.io/death-of-internet">"Death Of Internet"<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a><p class="comment">Producer, Master's second (last) year studies project</p></h4>
-                        <h4><a href="https://manaut.itch.io/mirage">"Mirage"<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a><p class="comment">Producer & Developer, Master's first year studies project</p></h4>
-                        <h4><a href="https://manaut.itch.io/imperium">"Imperium"<svg class="external-link" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#EFEFEF" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="feather feather-external-link"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path><polyline points="15 3 21 3 21 9"></polyline><line x1="10" y1="14" x2="21" y2="3"></line></svg></a><p class="comment">Producer & Developer, Bachelor's end of studies project</p></h4>
                     </div>
                 </div>
             </section>  
@@ -134,7 +200,7 @@
                 </div>
             </section>
             
-            <footer data-scroll-section>
+            <footer id="targetFooter" data-scroll-section>
                 <div class="line"></div>
                 <div class="footer-menu">
                     <a href="#header">back to top</a>
@@ -144,21 +210,18 @@
         </main>
 
         <div class="cursor"></div>
-        <div class="outer-cursor"></div>
+        <div class="outer-cursor">
+            <!-- <p><span id="x"></span></p>
+            <p><span id="y"></span></p> -->
+        </div>
         
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
         <script src="js/grained.js"></script>
         <script src="js/grain.js"></script>
-
+        <!-- <script src="js/getmargin.js"></script> -->
+        <!-- <script src="js/mousemove.js"></script> -->
         <script src="js/cursor.js"></script>
-
-        <!-- <script src="js/locomotive-scroll.min.js"></script>
-        <script>
-            const scroll = new LocomotiveScroll({
-                el: document.querySelector('[data-scroll-container]'),
-                smooth: true
-            });
-        </script> -->
+        <script src="js/hamburger.js"></script>
     </body>
 </html>
