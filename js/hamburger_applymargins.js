@@ -1,5 +1,6 @@
-// Look for specified elements
+// Hamburger
 
+// Look for specified elements
 var hamburger = document.querySelector(".header__main__navs__button");
 var header = document.querySelector(".navbar");
 var body = document.querySelector("body");
@@ -46,16 +47,18 @@ function reportWindowSize() {
     c.style.paddingBottom = originStyle.marginRight
 }
 
+// Do things
 window.onresize = reportWindowSize;
 
 
-const heightOutput = document.querySelector("#height");
-const widthOutput = document.querySelector("#width");
 
-var a = document.getElementById("originNav");
-var b = document.getElementById("targetNav");
-var c = document.getElementById("targetFooter");
+// OTHER FEATURE Get and apply margins
 
-document.addEventListener("DOMContentLoaded", reportWindowSize());
+// const heightOutput = document.querySelector("#height");
+// const widthOutput = document.querySelector("#width");
 
-window.onresize = reportWindowSize;
+// var a = document.getElementById("originNav");
+// var b = document.getElementById("targetNav");
+// var c = document.getElementById("targetFooter");
+
+// document.addEventListener("DOMContentLoaded", reportWindowSize());
