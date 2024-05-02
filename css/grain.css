@@ -20,8 +20,8 @@
     background-image: url(../img/gaussian_noise.png);
     opacity: 0.15;
     pointer-events: none;
-    -webkit-animation: noise .6s steps(2) infinite;
-    animation: noise .6s steps(2) infinite;
+    -webkit-animation: noise .5s steps(2) infinite;
+    animation: noise .5s steps(2) infinite;
 }
 
 @-webkit-keyframes noise {

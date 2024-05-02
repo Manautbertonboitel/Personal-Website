@@ -28,7 +28,6 @@ nav {
     letter-spacing: 1.5px;
     text-decoration: none;
     vertical-align: top;
-    margin-top: 0;
 }
 
 .navbar a:not(:last-child) {
