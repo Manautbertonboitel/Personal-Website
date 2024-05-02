@@ -66,12 +66,12 @@ header {
 }
 
 nav {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
 
-    backdrop-filter: blur(20px);
+    /* backdrop-filter: blur(20px); */
 
     z-index: 100;
 }
@@ -164,6 +164,10 @@ section {
     min-height: 100vh;
     /* margin-top: 100px; */
     margin-bottom: 100px;
+}
+
+#about section {
+    flex-direction: column;
 }
 
 .category {
