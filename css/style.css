@@ -1,9 +1,8 @@
 /* Font */
 @font-face {
     font-family: 'voyagebold';
-    src: url('../font/voyage-bold-webfont.woff2') format('woff2'),
-         url('../font/voyage-bold-webfont.woff') format('woff');
-    font-weight: normal;
+    src: url('../font/voyage-bold-webfont.woff2') format('woff2'), url('../font/voyage-bold-webfont.woff') format('woff'), url('../font/voyage-bold-webfont.ttf') format('truetype');;
+    font-weight: bold;
     font-style: normal;
 }
 
@@ -63,13 +62,6 @@ body {
     font-weight: 700;
 }
 
-.home-footer {
-    position: absolute;
-    bottom: 0;
-    height: 100px;
-    width: var(--general-document-width);
-}
-
 .line {
     width: 100%;
     height: 1px;
@@ -90,15 +82,23 @@ section {
     flex-direction: column;
 }
 
+.home-footer {
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: var(--general-document-width);
+}
+
 .category {
     width: 80%;
 }
 
 .category-title h3 {
-    line-height: var(--category-title-line-height);
-    font-size: var(--category-title-size);
-    margin-bottom: 30px;
     font-family: var(--display-font-family);
+    font-size: var(--category-title-size);
+    line-height: var(--category-title-line-height);
+    margin-bottom: 30px;
+    font-weight: normal;
 }
 
 .category-content {
