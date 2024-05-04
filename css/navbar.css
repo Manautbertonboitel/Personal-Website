@@ -31,7 +31,7 @@ nav {
 }
 
 .navbar a:not(:last-child) {
-    margin-right: 15px;
+    margin-right: calc(var(--general-margin-var) / 2);
 }
 
 .name-title {
@@ -49,30 +49,36 @@ nav {
 
 /* NAVBAR Collapsed */
 
+.no-scroll nav {
+    position: fixed;
+}
+
 .header__main__navs--collapse {
     position: fixed;
     left: 0; 
     top: 0;
     height: 100vh; 
     width: 100vw;
-    padding-top: 150px;
+    padding-top: calc(var(--general-margin-var) * 4);
+    padding-right: calc(var(--general-margin-var) / 2);
 
     opacity: 0;
     overflow: hidden;
     pointer-events: none;
 
-    background-color: black;
-    backdrop-filter: blur(20px);
+    background-color: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(50px);
+    -webkit-backdrop-filter: blur(50px);
 
     transition: opacity 500ms cubic-bezier(0, .61, .28, .92);
     
-    text-align: center;
+    text-align: right;
     display: flex;
     flex-direction: column;
 }
 
 .header__main__navs--collapse a:not(:first-child) {
-    margin-top: 55px;
+    margin-top: calc(var(--general-margin-var) * 1);
 }
 
 .header__main__navs--collapse a {

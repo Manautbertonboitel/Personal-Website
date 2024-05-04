@@ -34,11 +34,12 @@ h4 {
     transition: font-weight .1s ease-in-out;
     text-transform: uppercase;
     margin-top: 0;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 p {
-    margin-bottom: 0;
+    margin: 0;
+    margin-top: 20px;
 }
 
 footer {
