@@ -13,8 +13,8 @@
     --color-link: #EFEFEF;
     --color-link-hover: #EFEFEF;
     --secundary-text-color: #898989;
-    --category-title-size: 120px;
-    --category-title-line-height: 120px;
+    --category-title-size: 100px;
+    --category-title-line-height: 80px;
     --display-font-family: "voyagebold", serif;
     --text-font-family: 'Roboto', sans-serif;
     --text-size: 18px;
@@ -91,6 +91,11 @@ section:nth-child(1) {
     background-color: var(--secundary-text-color);
 }
 
+.space {
+    /* height: calc(var(--general-margin-var) / 4); */
+    height: 15px;
+}
+
 /* Home page footer */
 .home-footer {
     position: absolute;
@@ -154,7 +159,8 @@ section:nth-child(1) {
 } */
 
 .category-content p {
-    max-width: 674px;
+    /* max-width: 674px; */
+    margin: 0;
 }
 
 .category-content h4::before {
@@ -262,7 +268,7 @@ section:nth-child(1) {
 }
 
 .category-content-video-container .line {
-    margin: var(--general-margin-var) 0;
+    margin: calc(var(--general-margin-var) * 1) 0;
 }
 
 .external-link {
@@ -290,11 +296,6 @@ section:nth-child(1) {
 }
 
 @media only screen and (max-width: 1070px) {
-    :root {
-        --category-title-size: 100px;
-        --category-title-line-height: 75px;
-    }
-
     .category-content a .external-link {
         width: 15px;
     }

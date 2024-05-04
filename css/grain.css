@@ -41,3 +41,11 @@
     90% { transform: translate3d(6rem,-5rem,0) }
     to { transform: translate3d(-7rem,0,0) }
 }
+
+@media only screen and (max-width: 500px) {
+    .grain:before {
+        opacity: 0.1;
+        -webkit-animation: none;
+        animation: none;
+    }
+}
