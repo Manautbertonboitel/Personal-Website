@@ -12,22 +12,29 @@ nav {
     z-index: 100;
 }
 
-.name {
-    z-index: 1400;
-}
-
 .navbar {
     margin: auto;
     width: var(--general-document-width);
     display: flex;
     justify-content: space-between;
+    max-height: var(--text-size-tertiary);
+}
+
+/* .header__main__navs {
+
+} */
+
+.name {
+    z-index: 1400;
 }
 
 .navbar a {
     font-size: var(--text-size-tertiary);
+    line-height: var(--text-size-tertiary);
     letter-spacing: 1.5px;
     text-decoration: none;
     vertical-align: top;
+
 }
 
 .navbar a:not(:last-child) {
@@ -177,6 +184,10 @@ nav {
 /* Mobile phone - small device width */
 
 @media only screen and (max-width: 1070px) {
+    .navbar {
+        max-height: none;
+    }
+
     .header__main__navs__button__container {
         display: flex;
     }

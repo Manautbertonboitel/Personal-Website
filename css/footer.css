@@ -6,6 +6,10 @@ footer {
     margin-bottom: calc(var(--general-margin-var) / 2);
 }
 
+footer .line {
+    margin-top: 0;
+}
+
 .footer-menu {
     display: flex;
     margin-top: calc(var(--general-margin-var) / 4);

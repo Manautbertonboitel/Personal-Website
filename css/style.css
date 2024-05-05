@@ -22,6 +22,7 @@
     --text-size-tertiary: 11px;
     --general-margin-var: 80px;
     --general-document-width: calc(100% - var(--general-margin-var));
+    --navAndFooterHeight: 0;
 }
 
 /* General styles */
@@ -81,8 +82,9 @@ section:nth-child(1) {
     letter-spacing: 1px;
     text-transform: uppercase;
     font-size: var(--text-size-secondary);
-    color: var(--secundary-text-color);
     font-weight: 700;
+    line-height: 1em;
+    color: var(--secundary-text-color);
 }
 
 .line {
@@ -230,6 +232,11 @@ section:nth-child(1) {
 
 /* CINEMATIC PORTFOLIO CATEGORY */
 .category-content-video-container {
+    transition: all 150ms cubic-bezier(0, .61, .28, .92);
+}
+
+.category-content a:hover {
+    background-color: #89898933!important;
 }
 
 .category-content-video-container h4{
@@ -267,8 +274,8 @@ section:nth-child(1) {
     margin: 0;
 }
 
-.category-content-video-container .line {
-    margin: calc(var(--general-margin-var) * 1) 0;
+.category-content .line {
+    margin: calc(var(--general-margin-var) / 4) 0;
 }
 
 .external-link {

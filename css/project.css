@@ -1,16 +1,17 @@
 body {
-    min-height: 100vh;
+    /* min-height: 100vh; */
 }
 
-/* nav {
+nav {
     position: relative;
-} */
+} 
 
 main {
-    height: 100%;
+    /* min-height: calc(100vh - var(--navAndFooterHeight)); */
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: calc(var(--general-margin-var) / 2) 0 ;
 }
 
 .project {
@@ -18,8 +19,8 @@ main {
     flex-direction: row;
     flex-wrap: nowrap;
     width: var(--general-document-width);
-    height: 100%;
-    margin-top: calc(var(--general-margin-var) / 2);
+    min-height: calc(100vh - var(--navAndFooterHeight));
+    /* margin-top: calc(var(--general-margin-var) / 2); */
 }
 
 iframe {
@@ -32,6 +33,11 @@ iframe {
     padding-left: calc(var(--general-margin-var) / 2);
 }
 
+.project-description .line {
+    margin: calc(var(--general-margin-var) / 3) 0;
+}
+
+
 h4 {
     color: var(--color-text);
     font-weight: 400;
@@ -39,6 +45,8 @@ h4 {
     text-transform: uppercase;
     margin-top: 0;
     margin-bottom: 10px;
+    vertical-align: top;
+    line-height: 1em;
 }
 
 p {
@@ -46,12 +54,9 @@ p {
     margin-top: 20px;
 }
 
-.line {
-    margin: calc(var(--general-margin-var) / 3) 0;
-}
 
 footer {
-    margin-top: calc(var(--general-margin-var) / 2);
+    /* margin-top: calc(var(--general-margin-var) / 2); */
 }
 
 .control_buttons {
@@ -59,11 +64,12 @@ footer {
     flex-wrap: nowrap;
     justify-content: space-between;
     width: 100%;
-    margin-bottom: calc(var(--general-margin-var) / 2);
 }
 
 .control_buttons div {
-    width: 40%;
+    /* width: 40%; */
+    /* max-height: var(--text-size-tertiary); */
+
 }
 
 .control_buttons div:last-child {
@@ -71,7 +77,16 @@ footer {
 }
 
 .control_buttons a {
+    padding: calc(var(--general-margin-var) / 4);
+    border: .1px solid var(--secundary-text-color);
     text-decoration: none;
+    line-height: 1em;
+    /* vertical-align: top; */
+    transition: all 150ms cubic-bezier(0, .61, .28, .92);
+}
+
+.control_buttons a:hover {
+    background-color: #89898933;
 }
 
 @media only screen and (max-width: 1070px) {
@@ -82,14 +97,16 @@ footer {
     main {
         height: auto;
         display: block;
+        margin: 0;
     }
 
     .project {
         flex-wrap: wrap;
         justify-content: center;
-        align-items: center;
+        /* align-items: center; */
         margin: auto;
         width: 100%;
+        /* min-height: 0; */
     }
 
     .project-description {
@@ -101,5 +118,9 @@ footer {
     iframe {
         width: 100%;
         aspect-ratio: 16 / 9;
+    }
+
+    .control_buttons {
+        margin-bottom: calc(var(--general-margin-var) / 3);
     }
 }
