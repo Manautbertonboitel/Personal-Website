@@ -98,6 +98,11 @@ section:nth-child(1) {
     height: 15px;
 }
 
+p:not(:last-child) {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
 /* Home page footer */
 .home-footer {
     position: absolute;
@@ -162,7 +167,7 @@ section:nth-child(1) {
 
 .category-content p {
     /* max-width: 674px; */
-    margin: 0;
+    /* margin: 0; */
 }
 
 .category-content h4::before {
@@ -183,27 +188,37 @@ section:nth-child(1) {
     margin-left: 10px;
 }
 
-.category-content h4:not(:last-child) {
+/* .category-content h4:not(:last-child) {
     margin-bottom: calc(var(--general-margin-var) / 2);
-}
+} */
 
 .category-content h4 .comment {
     margin-top: 10px;
 }
 
-.category-content a {
+p a {
     text-decoration: none;
     color: var(--color-text);
     font-weight: 400;
     transition: font-weight .1s ease-in-out;
 }
 
-.category-content a:hover {
+p a:hover {
     font-weight: 900;
-    
 }
 
-.category-content a span {
+h4 a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-weight: 400;
+    transition: font-weight .1s ease-in-out;
+}
+
+h4 a:hover {
+    font-weight: 900;
+}
+
+/* .category-content a span {
     display: none;
     position: absolute;
     width: 320px;
@@ -211,12 +226,12 @@ section:nth-child(1) {
     margin-left: 250px;
     z-index: 2;
     overflow: hidden;
-}
+} */
 
-.category-content a:hover span {
+/* .category-content a:hover span {
     display: block;
     animation: fadeIn .5s;
-}
+} */
 
 .category-content a .external-link {
     position: relative;
@@ -233,16 +248,22 @@ section:nth-child(1) {
 /* CINEMATIC PORTFOLIO CATEGORY */
 .category-content-video-container {
     transition: all 150ms cubic-bezier(0, .61, .28, .92);
+    background-color: #000;
 }
 
-.category-content a:hover {
+/* .category-content a:hover {
     background-color: #89898933!important;
-}
+} */
 
 .category-content-video-container h4{
     margin-top: 0;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
     margin-left: 0;
+}
+
+.category-content-video-container:hover{
+    background-color: aliceblue;
+    z-index: 3000;
 }
 
 .category-content-video-sub {
