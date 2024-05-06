@@ -38,12 +38,6 @@ iframe {
     margin: calc(var(--general-margin-var) / 4) 0;
 }
 
-p {
-    margin: 0;
-    margin-top: 20px;
-}
-
-
 footer {
     /* margin-top: calc(var(--general-margin-var) / 2); */
 }

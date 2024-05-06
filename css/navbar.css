@@ -99,6 +99,7 @@ nav {
     text-transform: uppercase;
     color: var(--color-secondary);
     font-weight: 700;
+    line-height: normal;
 }
 
 .header__main__navs__button__container {

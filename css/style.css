@@ -85,6 +85,11 @@ a {
     text-decoration: none;
 }
 
+p {
+    margin: 0;
+    /* margin-top: 20px; */
+}
+
 h4 {
     color: var(--color-primary);
     font-weight: 400;
@@ -124,7 +129,7 @@ h4:not(:only-child) {
     height: 15px;
 }
 
-p:not(:last-child) {
+p:not(:last-of-type) {
     margin-top: 0;
     margin-bottom: calc(var(--general-margin-var) / 4);
 }
