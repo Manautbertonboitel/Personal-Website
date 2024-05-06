@@ -29,24 +29,13 @@ iframe {
 }
 
 .project-description {
+    position: relative;
     width: 50%;
     padding-left: calc(var(--general-margin-var) / 2);
 }
 
 .project-description .line {
-    margin: calc(var(--general-margin-var) / 3) 0;
-}
-
-
-h4 {
-    color: var(--color-text);
-    font-weight: 400;
-    transition: font-weight .1s ease-in-out;
-    text-transform: uppercase;
-    margin-top: 0;
-    margin-bottom: 10px;
-    vertical-align: top;
-    line-height: 1em;
+    margin: calc(var(--general-margin-var) / 4) 0;
 }
 
 p {
@@ -60,10 +49,13 @@ footer {
 }
 
 .control_buttons {
+    position: absolute;
+    bottom: 0;
     display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;
-    width: 100%;
+    /* width: 100%; */
+    width: calc(100% - calc(var(--general-margin-var) / 2));
 }
 
 .control_buttons div {
@@ -78,7 +70,7 @@ footer {
 
 .control_buttons a {
     padding: calc(var(--general-margin-var) / 4);
-    border: .1px solid var(--secundary-text-color);
+    border: .1px solid var(--color-tertiary);
     text-decoration: none;
     line-height: 1em;
     /* vertical-align: top; */
@@ -86,7 +78,8 @@ footer {
 }
 
 .control_buttons a:hover {
-    background-color: #89898933;
+    background-color: var(--color-secondary);
+    border: .1px solid transparent;
 }
 
 @media only screen and (max-width: 1070px) {
@@ -121,6 +114,8 @@ footer {
     }
 
     .control_buttons {
-        margin-bottom: calc(var(--general-margin-var) / 3);
+        position: static;
+        margin-bottom: calc(var(--general-margin-var) / 4);
+        width: 100%;
     }
 }

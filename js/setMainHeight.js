@@ -55,6 +55,6 @@ function reportWindowSize() {
     // console.log(getComputedStyle(cssRoot).getPropertyValue("--navAndFooterHeight"));
 }
 
-// document.addEventListener("DOMContentLoaded", reportWindowSize());
+document.addEventListener("DOMContentLoaded", reportWindowSize());
 window.onload = reportWindowSize;
 window.onresize = reportWindowSize;

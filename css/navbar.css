@@ -60,6 +60,12 @@ nav {
     position: fixed;
 }
 
+.no-scroll .grain:before {
+    /* opacity: 0.1; */
+    -webkit-animation: none;
+    animation: none;
+}
+
 .header__main__navs--collapse {
     position: fixed;
     left: 0; 
@@ -77,7 +83,7 @@ nav {
     backdrop-filter: blur(50px);
     -webkit-backdrop-filter: blur(50px);
 
-    transition: opacity 500ms cubic-bezier(0, .61, .28, .92);
+    transition: opacity 300ms cubic-bezier(0, .61, .28, .92);
     
     text-align: right;
     display: flex;
@@ -91,7 +97,7 @@ nav {
 .header__main__navs--collapse a {
     font-size: 20px;
     text-transform: uppercase;
-    color: var(--secundary-text-color);
+    color: var(--color-secondary);
     font-weight: 700;
 }
 
@@ -127,7 +133,7 @@ nav {
 .button__stroke {
     width: 32px;
     height: 2px;
-    background: var(--secundary-text-color);;
+    background: var(--color-secondary);;
     transform: none;
     transform-origin: left;
     transition: all 500ms cubic-bezier(0, .61, .28, .92);
