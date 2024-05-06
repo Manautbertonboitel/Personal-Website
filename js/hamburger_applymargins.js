@@ -41,10 +41,10 @@ function reportWindowSize() {
     }
 
 
-    var originStyle = a.currentStyle || window.getComputedStyle(a);
-    b.style.paddingTop = originStyle.marginRight
-    b.style.paddingBottom = originStyle.marginRight
-    c.style.paddingBottom = originStyle.marginRight
+    // var originStyle = a.currentStyle || window.getComputedStyle(a);
+    // b.style.paddingTop = originStyle.marginRight
+    // b.style.paddingBottom = originStyle.marginRight
+    // c.style.paddingBottom = originStyle.marginRight
 }
 
 // Do things

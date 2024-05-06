@@ -53,16 +53,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
     };
 });
 
-const box = document.querySelector("body");
-const pageX = document.getElementById("x");
-const pageY = document.getElementById("y");
+// TRUC POUR ANIMER LES DECORATIONS DU CURSEUR
+// const box = document.querySelector("body");
+// const pageX = document.getElementById("x");
+// const pageY = document.getElementById("y");
 
-function updateDisplay(event) {
-  pageX.innerText = event.pageX;
-  pageY.innerText = event.pageY;
-}
+// function updateDisplay(event) {
+//   pageX.innerText = event.pageX;
+//   pageY.innerText = event.pageY;
+// }
 
-box.addEventListener("mousemove", updateDisplay, false);
-box.addEventListener("mouseenter", updateDisplay, false);
-box.addEventListener("mouseleave", updateDisplay, false);
-box.addEventListener("mouseover", updateDisplay, false);
+// box.addEventListener("mousemove", updateDisplay, false);
+// box.addEventListener("mouseenter", updateDisplay, false);
+// box.addEventListener("mouseleave", updateDisplay, false);
+// box.addEventListener("mouseover", updateDisplay, false);
