@@ -47,8 +47,11 @@ body {
     font-family: var(--text-font-family);
     font-size: var(--text-size);
     font-weight: 300;
+    font-synthesis: none;
+    text-rendering: optimizelegibility;
     margin: 0;
     padding: 0;
+
 }
 
 main {
@@ -155,10 +158,42 @@ p:not(:last-of-type) {
 }
 
 .home-footer p {
-    width: 50%;
     text-align: right;
     margin: 0;
 }
+
+.home-footer svg {
+    
+    vertical-align: text-top;
+    height: 11px;
+    width: 40px;
+    overflow: visible;
+}
+
+.home-footer svg rect {
+    fill: black;
+}
+
+.home-footer svg rect:first-child {
+    fill: #666666;
+}
+
+.circleStroke {
+    stroke: #666666;
+}
+
+.circleFill {
+    fill: #e9e9e9;
+}
+
+
+.home-footer text {
+    font-weight: 700;
+    font-size: var(--text-size-secondary);
+    font-family: var(--text-font-family);
+    fill: var(--color-secondary);
+}
+
 
 
 /* GENERIC CATEGORY */
