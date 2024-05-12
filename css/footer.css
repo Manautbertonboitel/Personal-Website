@@ -16,14 +16,15 @@ footer .line {
     justify-content: space-between;
 }
 
-.footer-menu a {
-    text-decoration: none;
-    margin-top: 0;
-    margin-right: 15px;
+.footer-menu > * {
+    width: 33%;
+    margin: 0!important;
 }
 
-.footer-menu p {
-    width: 50%;
+.footer-menu a {
+    text-decoration: none;
+}
+
+.footer-menu p:last-of-type {
     text-align: right;
-    margin: 0;
 }
