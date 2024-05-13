@@ -12,17 +12,18 @@ footer .line {
 
 .footer-menu {
     display: flex;
-    margin-top: calc(var(--general-margin-var) / 4);
+    margin-top: calc(var(--general-margin-var) / 2);
     justify-content: space-between;
 }
 
 .footer-menu > * {
-    width: 33%;
+    /* width: 33%; */
     margin: 0!important;
 }
 
 .footer-menu a {
     text-decoration: none;
+    margin-right: 30px!important;
 }
 
 .footer-menu p:last-of-type {

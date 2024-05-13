@@ -151,9 +151,9 @@ p:not(:last-of-type) {
     padding-bottom: calc(var(--general-margin-var) / 2);
 }
 
-.home-footer div {
+.home-footer div:last-of-type {
     display: flex;
-    margin-top: calc(var(--general-margin-var) / 4);
+    margin-top: calc(var(--general-margin-var) / 2);
     justify-content: space-between;
 }
 
