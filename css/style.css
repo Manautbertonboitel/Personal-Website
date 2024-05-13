@@ -1,9 +1,14 @@
 /* Font */
 @font-face {
     font-family: 'voyagebold';
-    src: url('../font/voyage-bold-webfont.woff2') format('woff2'), url('../font/voyage-bold-webfont.woff') format('woff'), url('../font/voyage-bold-webfont.ttf') format('truetype');;
+    src: url('../font/voyage-bold-webfont.woff2') format('woff2'), url('../font/voyage-bold-webfont.woff') format('woff'), url('../font/voyage-bold-webfont.ttf') format('truetype');
     font-weight: bold;
     font-style: normal;
+}
+
+@font-face {
+    font-family: 'Segoe UI Symbol';
+    src: url('../font/segoe_ui_symbol-webfont.woff2') format('woff2'), url('../font/segoe_ui_symbol-webfont.woff') format('woff'), url('../font/segoe_ui_symbol-webfont.ttf') format('truetype');
 }
 
 /* Variables */
@@ -186,6 +191,9 @@ p:not(:last-of-type) {
     fill: #e9e9e9;
 }
 
+tspan {
+    font-family: "Segoe UI Symbol";
+}
 
 .home-footer text {
     font-weight: 700;
