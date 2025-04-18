@@ -1,0 +1,72 @@
+[
+  {
+    "file": "games/1.html",
+    "category": "games",
+    "title": "Microsoft Flight Simulator 2024",
+    "description": "Associate Producer",
+    "image": "img/flightsimulator.jpg"
+  },
+  {
+    "file": "games/2.html",
+    "category": "games",
+    "title": "Death of internet",
+    "description": "Producer, Master's second year studies project",
+    "image": "../img/doi/Jx4hkx.jpg"
+  },
+  {
+    "file": "games/3.html",
+    "category": "games",
+    "title": "Mirage",
+    "description": "Producer & Programmer, Master's first year studies project",
+    "image": "img/mirage.jpg"
+  },
+  {
+    "file": "games/4.html",
+    "category": "games",
+    "title": "Imperium",
+    "description": "Producer & Programmer, Bachelor's end of studies project",
+    "image": "img/imperium.jpg"
+  },
+  {
+    "file": "videos/1.html",
+    "category": "videos",
+    "title": "Titre inconnu",
+    "description": "Pas de description",
+    "image": "placeholder.jpg"
+  },
+  {
+    "file": "videos/2.html",
+    "category": "videos",
+    "title": "Titre inconnu",
+    "description": "Pas de description",
+    "image": "placeholder.jpg"
+  },
+  {
+    "file": "videos/3.html",
+    "category": "videos",
+    "title": "Titre inconnu",
+    "description": "Pas de description",
+    "image": "placeholder.jpg"
+  },
+  {
+    "file": "videos/4.html",
+    "category": "videos",
+    "title": "Titre inconnu",
+    "description": "Pas de description",
+    "image": "placeholder.jpg"
+  },
+  {
+    "file": "videos/5.html",
+    "category": "videos",
+    "title": "Titre inconnu",
+    "description": "Pas de description",
+    "image": "placeholder.jpg"
+  },
+  {
+    "file": "videos/6.html",
+    "category": "videos",
+    "title": "Titre inconnu",
+    "description": "Pas de description",
+    "image": "placeholder.jpg"
+  }
+]

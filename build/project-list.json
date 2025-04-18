@@ -1,0 +1,86 @@
+[
+  {
+    "file": "games/1.html",
+    "category": "games",
+    "title": "Mon jeu cool",
+    "description": "Un jeu d’aventure délirant entre poésie et chaos.",
+    "image": "images/mon-jeu-cool-cover.jpg"
+  },
+  {
+    "file": "games/2.html",
+    "category": "games",
+    "title": "Titre inconnu",
+    "description": "Pas de description",
+    "image": "placeholder.jpg"
+  },
+  {
+    "file": "games/3.html",
+    "category": "games",
+    "title": "Titre inconnu",
+    "description": "Pas de description",
+    "image": "placeholder.jpg"
+  },
+  {
+    "file": "games/4.html",
+    "category": "games",
+    "title": "Titre inconnu",
+    "description": "Pas de description",
+    "image": "placeholder.jpg"
+  },
+  {
+    "file": "games/5.html",
+    "category": "games",
+    "title": "Titre inconnu",
+    "description": "Pas de description",
+    "image": "placeholder.jpg"
+  },
+  {
+    "file": "games/6.html",
+    "category": "games",
+    "title": "Titre inconnu",
+    "description": "Pas de description",
+    "image": "placeholder.jpg"
+  },
+  {
+    "file": "videos/1.html",
+    "category": "videos",
+    "title": "Titre inconnu",
+    "description": "Pas de description",
+    "image": "placeholder.jpg"
+  },
+  {
+    "file": "videos/2.html",
+    "category": "videos",
+    "title": "Titre inconnu",
+    "description": "Pas de description",
+    "image": "placeholder.jpg"
+  },
+  {
+    "file": "videos/3.html",
+    "category": "videos",
+    "title": "Titre inconnu",
+    "description": "Pas de description",
+    "image": "placeholder.jpg"
+  },
+  {
+    "file": "videos/4.html",
+    "category": "videos",
+    "title": "Titre inconnu",
+    "description": "Pas de description",
+    "image": "placeholder.jpg"
+  },
+  {
+    "file": "videos/5.html",
+    "category": "videos",
+    "title": "Titre inconnu",
+    "description": "Pas de description",
+    "image": "placeholder.jpg"
+  },
+  {
+    "file": "videos/6.html",
+    "category": "videos",
+    "title": "Titre inconnu",
+    "description": "Pas de description",
+    "image": "placeholder.jpg"
+  }
+]

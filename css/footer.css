@@ -21,8 +21,7 @@ footer .line {
     margin: 0!important;
 }
 
-.footer-menu a {
-    text-decoration: none;
+.footer-menu > a {
     margin-right: 30px!important;
 }
 

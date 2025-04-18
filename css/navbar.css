@@ -29,12 +29,8 @@ nav {
 }
 
 .navbar a {
-    font-size: var(--text-size-tertiary);
     line-height: var(--text-size-tertiary);
-    letter-spacing: 1.5px;
-    text-decoration: none;
     vertical-align: top;
-
 }
 
 .navbar a:not(:last-child) {
