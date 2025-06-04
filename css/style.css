@@ -18,6 +18,20 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'fkrastergrotesk';
+    src: url('../font/fkrastergrotesk/fkrastergrotesk-blended-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'fkrastergrotesksharp';
+    src: url('../font/fkrastergrotesk/fkrastergrotesk-sharp-webfont.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
 /* Variables */
 :root {
     /* --color-text: #efefefbe; */
@@ -32,12 +46,12 @@
     --color-green: rgba(0, 196, 10, 1);
     --category-title-size: 100px;
     --category-title-line-height: 80px;
-    --display-font-family: "At Amiga", serif;
+    --display-font-family: "fkrastergrotesk", serif;
     --text-font-family: 'Roboto', sans-serif;
     --text-size: 18px;
     --text-size-secondary: 11px;
     --text-size-tertiary: 11px;
-    --general-margin-var: 80px;
+    --general-margin-var: 140px;
     --general-document-width: calc(100% - var(--general-margin-var));
     --navAndFooterHeight: 0;
 }
@@ -88,18 +102,34 @@ main {
 
 .header_img_container {
     position: absolute; 
+    /* height: calc(100vh - var(--general-margin-var) / 2);
+    width: calc(100vw - var(--general-margin-var) / 2); */
     height: 100vh;
     width: 100vw;
     z-index: -100;
     overflow: hidden;
     /* display: none; */
-
+    /* border-radius: 25px; */
+    /* background: url(../img/doi/Dz_VS3.png); */
 }
 
-.header_img_container img {
+.header_img_container::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  margin: 20px; /* épaisseur de la "bordure" */
+  background: inherit; /* pour reprendre le fond floutable */
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
+  border-radius: 8px; /* si tu veux des bords arrondis */
+  z-index: 1;
+}
+
+/* .header_img_container img {
+    width: 100%;
+    height: 100%;
     object-fit: cover;
-    object-position: 50% 50%;
-}
+} */
 
 section {
     display: flex;
@@ -147,6 +177,7 @@ h4:not(:only-child) {
     margin: 0;
     letter-spacing: 1px;
     text-transform: uppercase;
+    font-family: var(--display-font-family) ;
     font-size: var(--text-size-secondary);
     font-weight: 700;
     line-height: 1em;
